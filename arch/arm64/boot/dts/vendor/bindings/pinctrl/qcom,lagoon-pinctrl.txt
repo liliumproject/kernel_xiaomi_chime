@@ -17,6 +17,10 @@ LAGOON platform.
 	Usage: required
 	Value type: <prop-encoded-array>
 	Definition: should specify the TLMM summary IRQ.
+<<<<<<< HEAD
+=======
+		    This can be followed by optional direct connect IRQs.
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
 - interrupt-controller:
 	Usage: required

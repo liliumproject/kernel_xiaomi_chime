@@ -13,6 +13,10 @@ ADC_TM node
     Value type: <string>
     Definition: Should contain "qcom,adc-tm5" or "qcom,adc-tm5-iio" for PMIC5 ADC TM device.
             Should contain "qcom,adc-tm7" or "qcom,adc-tm5-iio" for PMIC7 ADC TM device.
+<<<<<<< HEAD
+=======
+            Should contain "qcom,adc-tm-rev2" for PMIC refresh ADC_TM device
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
 - reg:
     Usage: required

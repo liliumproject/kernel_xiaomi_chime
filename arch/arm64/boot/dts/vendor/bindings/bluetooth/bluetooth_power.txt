@@ -9,6 +9,10 @@ Required properties:
 		qca,qca6174
 		qca,wcn3990
                 qca,qca6390
+<<<<<<< HEAD
+=======
+		qca,wcn6750
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 	- qca,bt-reset-gpio: GPIO pin to bring BT Controller out of reset
 
 Optional properties:

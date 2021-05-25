@@ -10,7 +10,12 @@ registers.
 
 Required Properties:
 - compatible: shall contain the following:
+<<<<<<< HEAD
 		"qcom,cpufreq-hw-debug-trace" or "qcom,cpufreq-hw-epss-debug".
+=======
+		"qcom,cpufreq-hw-debug-trace" or "qcom,cpufreq-hw-debug"
+		 or "qcom,cpufreq-hw-epss-debug".
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 - reg: shall contain base register location and length.
 - reg-names: shall contain the frequency domain name.
 

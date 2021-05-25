@@ -383,6 +383,7 @@ Optional properties:
 				priority for concurrent writeback clients.
 - qcom,sde-vbif-qos-lutdma-remap:	This array is used to program vbif qos remapper register
 				priority for lutdma client.
+<<<<<<< HEAD
 - qcom,sde-danger-lut:		Array of 5 cell property, with a format of
 				<linear, tile, nrt, cwb, tile-qseed>,
 				indicating the danger luts on sspp.
@@ -395,10 +396,28 @@ Optional properties:
 				indicating the safe luts for macrotile format on sspp.
 				Zero fill level on the last entry identifies the default lut.
 - qcom,sde-safe-lut-macrotile-qseed: Array of 2 cell property, with a format of
+=======
+- qcom,sde-qos-refresh-rates:	A u32 array, indicating the different refresh rates for
+				danger, safe and creq luts on sspp and wb. All luts will be
+				multidimensional values when multiple refresh rate qos is present.
+- qcom,sde-danger-lut:		A u32 array of 5 cell property, with a format of
+				<linear, tile, nrt, cwb, tile-qseed>,
+				indicating the danger luts on sspp and wb.
+- qcom,sde-safe-lut-linear:	A u32 array of 2 cell property, with a format of
+				<fill level, lut> in ascending fill level
+				indicating the safe luts for linear format on sspp.
+				Zero fill level on the last entry identifies the default lut.
+- qcom,sde-safe-lut-macrotile:	A u32 array of 2 cell property, with a format of
+				<fill level, lut> in ascending fill level
+				indicating the safe luts for macrotile format on sspp.
+				Zero fill level on the last entry identifies the default lut.
+- qcom,sde-safe-lut-macrotile-qseed: A u32 array of 2 cell property, with a format of
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 				<fill level, lut> in ascending fill level
 				indicating the safe luts for macrotile format
 				with qseed3 on sspp.
 				Zero fill level on the last entry identifies the default lut.
+<<<<<<< HEAD
 - qcom,sde-safe-lut-nrt:	Array of 2 cell property, with a format of
 				<fill level, lut> in ascending fill level
 				indicating the safe luts for nrt (e.g wfd) on sspp.
@@ -416,15 +435,42 @@ Optional properties:
 				indicating the qos luts for macrotile format on sspp.
 				Zero fill level on the last entry identifies the default lut.
 - qcom,sde-qos-lut-macrotile-qseed: Array of 3 cell property, with a format of
+=======
+- qcom,sde-safe-lut-nrt:	A u32 array of 2 cell property, with a format of
+				<fill level, lut> in ascending fill level
+				indicating the safe luts for nrt (e.g wfd) on sspp.
+				Zero fill level on the last entry identifies the default lut.
+- qcom,sde-safe-lut-cwb:	A u32 array of 2 cell property, with a format of
+				<fill level, lut> in ascending fill level
+				indicating the safe luts for cwb on sspp.
+				Zero fill level on the last entry identifies the default lut.
+- qcom,sde-qos-lut-linear:	A u64 array of 3 cell property, with a format of
+				<fill level, lut hi, lut lo> in ascending fill level
+				indicating the qos luts for linear format on sspp.
+				Zero fill level on the last entry identifies the default lut.
+- qcom,sde-qos-lut-macrotile:	A u64 array of 3 cell property, with a format of
+				<fill level, lut hi, lut lo> in ascending fill level
+				indicating the qos luts for macrotile format on sspp.
+				Zero fill level on the last entry identifies the default lut.
+- qcom,sde-qos-lut-macrotile-qseed: A u64 array of 3 cell property, with a format of
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 				<fill level, lut hi, lut lo> in ascending fill level
 				indicating the qos luts for macrotile format
 				with qseed3 enabled on sspp.
 				Zero fill level on the last entry identifies the default lut.
+<<<<<<< HEAD
 - qcom,sde-qos-lut-nrt:		Array of 3 cell property, with a format of
 				<fill level, lut hi, lut lo> in ascending fill level
 				indicating the qos luts for nrt (e.g wfd) on sspp.
 				Zero fill level on the last entry identifies the default lut.
 - qcom,sde-qos-lut-cwb:		Array of 3 cell property, with a format of
+=======
+- qcom,sde-qos-lut-nrt:		A u64 array of 3 cell property, with a format of
+				<fill level, lut hi, lut lo> in ascending fill level
+				indicating the qos luts for nrt (e.g wfd) on sspp.
+				Zero fill level on the last entry identifies the default lut.
+- qcom,sde-qos-lut-cwb:		A u64 array of 3 cell property, with a format of
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 				<fill level, lut hi, lut lo> in ascending fill level
 				indicating the qos luts for cwb on sspp.
 				Zero fill level on the last entry identifies the default lut.
@@ -679,6 +725,7 @@ Example:
     qcom,sde-wb-id = <2>;
     qcom,sde-wb-clk-ctrl = <0x2bc 16>;
 
+<<<<<<< HEAD
     qcom,sde-danger-lut = <0x0000000f 0x0000ffff 0x00000000
             0x00000000 0x0000ffff>;
     qcom,sde-safe-lut-linear = <0 0xfff8>;
@@ -713,6 +760,31 @@ Example:
             <0 0x00000000 0x00000000>;
     qcom,sde-qos-lut-cwb =
             <0 0x75300000 0x00000000>;
+=======
+    qcom,sde-danger-lut = <0x0000ffff 0x0000ffff
+	0x00000000 0x00000000 0x0000ffff>, <0x0003ffff
+	0x0003ffff 0x00000000 0x00000000 0x0003ffff>;
+
+
+    qcom,sde-safe-lut-linear = <0 0xff00>, <0 0xfe00>;
+    qcom,sde-safe-lut-macrotile = <0 0xff00>, <0 0xfe00>;
+    qcom,sde-safe-lut-macrotile-qseed = <0 0xff00>, <0 0xfe00>;
+    qcom,sde-safe-lut-nrt = <0 0xffff>, <0 0xffff>;
+    qcom,sde-safe-lut-cwb = <0 0x3ff>, <0x3ff>;
+
+
+    qcom,sde-qos-lut-linear = <0 0x00112233 0x44556677>,
+			 <0 0x00112234 0x45566777>;
+    qcom,sde-qos-lut-macrotile = <0 0x00112233 0x44556677>,
+			 <0 0x00112234 0x45566777>;
+    qcom,sde-qos-lut-macrotile-qseed = <0 0x00112233 0x66777777>,
+			 <0 0x00112236 0x67777777>;
+    qcom,sde-qos-lut-nrt = <0 0x00000000 0x00000000>,
+			 <0 0x00000000 0x00000000>;
+    qcom,sde-qos-lut-cwb = <0 0x66666541 0x00000000>,
+			 <0 0x66666541 0x00000000>;
+    qcom,sde-qos-refresh-rates = <60 120>;
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
     qcom,sde-cdp-setting = <1 1>, <1 0>;
 

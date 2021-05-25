@@ -390,6 +390,16 @@ Charger specific properties:
   Value type: bool
   Definition: Boolean flag which when present disables FCC restriction.
 
+<<<<<<< HEAD
+=======
+- qcom,qc4-max-icl-ua
+  Usage:      optional
+  Value type: <u32>
+  Definition: Specifies the maximum input current limit that can be configured
+		for PPS adapter in CV mode.
+		If left unspecified, the default value is 4000mA.
+
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 =============================================
 Second Level Nodes - SMB5 Charger Peripherals
 =============================================

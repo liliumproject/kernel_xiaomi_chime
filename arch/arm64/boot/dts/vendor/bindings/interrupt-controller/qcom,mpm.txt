@@ -29,6 +29,10 @@ Properties:
 		"qcom,mpm-gic-trinket"
 		"qcom,mpm-gic-bengal"
 		"qcom,mpm-gic-scuba"
+<<<<<<< HEAD
+=======
+		"qcom,mpm-gic-sdm660"
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
 - interrupts:
 	Usage: required

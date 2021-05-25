@@ -11,6 +11,10 @@ Required properties :
 		"qcom,sdm845-rpmh-clk"
 		"qcom,lito-rpmh-clk"
 		"qcom,lagoon-rpmh-clk"
+<<<<<<< HEAD
+=======
+		"qcom,litomagnus-rpmh-clk"
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
 - #clock-cells : must contain 1
 

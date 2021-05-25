@@ -214,6 +214,11 @@ Optional properties:
 					0 = default value.
 - qcom,mdss-dsi-bl-max-level:		Specifies the max backlight level supported by the panel.
 					255 = default value.
+<<<<<<< HEAD
+=======
+- qcom,mdss-dsi-bl-inverted-dbv:	A boolean to specify whether to invert the display brightness value.
+					When this boolean is set, will inverted display brightness value.
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 - qcom,mdss-brightness-max-level:	Specifies the max brightness level supported.
 					255 = default value.
 - qcom,bl-update-flag:			A string that specifies controls for backlight update of the panel.
@@ -285,6 +290,11 @@ Optional properties:
 					0x00 = default value.
 - qcom,mdss-dsi-t-clk-pre:		Specifies the byte clock cycles before mode switch.
 					0x00 = default value.
+<<<<<<< HEAD
+=======
+- qcom,mdss-dsi-t-clk-pre-extend:	Boolean that specifies whether to enable t_clk_pre counter
+					increment by 2 byteclk.
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 - qcom,mdss-dsi-stream:			Specifies the packet stream to be used.
 					0 = stream 0 (default)
 					1 = stream 1
@@ -517,7 +527,11 @@ Optional properties:
 - qcom,panel-ack-disabled: A boolean property to indicate, whether we need to wait for any ACK from the panel
 			   for any commands that we send.
 - qcom,mdss-dsi-force-clock-lane-hs:	Boolean to force dsi clock lanes to HS mode always.
+<<<<<<< HEAD
 
+=======
+- qcom,panel-cphy-mode:			Boolean to specify whether panel is using cphy.
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 - qcom,compression-mode:		Select compression mode for panel.
 					"fbc" - frame buffer compression
 					"dsc" - display stream compression.
@@ -672,6 +686,10 @@ Example:
 		qcom,mdss-dsi-lane-3-state;
 		qcom,mdss-dsi-t-clk-post = <0x20>;
 		qcom,mdss-dsi-t-clk-pre = <0x2c>;
+<<<<<<< HEAD
+=======
+		qcom,mdss-dsi-t-clk-pre-extend;
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 		qcom,mdss-dsi-stream = <0>;
 		qcom,mdss-dsi-mdp-trigger = <0>;
 		qcom,mdss-dsi-dma-trigger = <0>;

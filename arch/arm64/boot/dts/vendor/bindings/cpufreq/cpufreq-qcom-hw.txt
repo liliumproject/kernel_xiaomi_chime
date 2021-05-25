@@ -190,6 +190,7 @@ DCVS state together.
 
 		#freq-domains-cells = <2>
 
+<<<<<<< HEAD
 		qcom,cpufreq-table-0 =
 			< 300000>,
 			< 614400>,
@@ -212,5 +213,7 @@ DCVS state together.
 			<1804800>,
 			<2016000>,
 			<2016000>;
+=======
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 	};
 }

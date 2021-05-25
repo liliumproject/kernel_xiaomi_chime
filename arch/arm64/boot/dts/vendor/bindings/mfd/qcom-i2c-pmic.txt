@@ -76,6 +76,14 @@ Platform independent properties:
 	Definition: phandle of the pin configuration.
 		    Please refer to pinctrl-bindings.txt
 
+<<<<<<< HEAD
+=======
+- qcom,enable-toggle-stat
+	Usage:      optional
+	Value type: bool
+	Definition: Enables stat interrupt toggle at init.
+
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 =======
 Example
 =======

@@ -17,6 +17,10 @@ platforms.
 		    "qcom,kona-spcs-global"
 		    "qcom,bengal-apcs-hmss-global"
 		    "qcom,scuba-apcs-hmss-global"
+<<<<<<< HEAD
+=======
+		    "qcom,sdm660-apcs-hmss-global"
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 - reg:
 	Usage: required
 	Value type: <prop-encoded-array>

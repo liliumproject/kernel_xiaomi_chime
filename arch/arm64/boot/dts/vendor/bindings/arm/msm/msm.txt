@@ -50,6 +50,12 @@ SoCs:
 - LITO
   compatible = "qcom,lito"
 
+<<<<<<< HEAD
+=======
+- ORCHID
+  compatible = "qcom,orchid"
+
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 - LAGOON
   compatible = "qcom,lagoon"
 
@@ -83,6 +89,15 @@ SoCs:
 - SDMMAGPIE
   compatible = "qcom,sdmmagpie"
 
+<<<<<<< HEAD
+=======
+- SDM660
+  compatible = "qcom,sdm660"
+
+- SDA660
+  compatible = "qcom,sda660"
+
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 - BENGAL_IOT
   compatible = "qcom,bengal-iot"
 
@@ -193,6 +208,11 @@ compatible = "qcom,lito-mtp"
 compatible = "qcom,lito-cdp"
 compatible = "qcom,lito-atp"
 compatible = "qcom,lito-qrd"
+<<<<<<< HEAD
+=======
+compatible = "qcom,orchid-mtp"
+compatible = "qcom,orchid-cdp"
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 compatible = "qcom,lagoon-rumi"
 compatible = "qcom,lagoon-mtp"
 compatible = "qcom,lagoon-cdp"
@@ -225,6 +245,16 @@ compatible = "qcom,sdxprairie-cdp"
 compatible = "qcom,sdmmagpie-rumi"
 compatible = "qcom,sdmmagpie-idp"
 compatible = "qcom,sdmmagpie-qrd"
+<<<<<<< HEAD
+=======
+compatible = "qcom,sdm660-cdp"
+compatible = "qcom,sdm660-mtp"
+compatible = "qcom,sdm660-qrd"
+compatible = "qcom,sdm660-sim"
+compatible = "qcom,sda660-mtp"
+compatible = "qcom,sda660-cdp"
+compatible = "qcom,sda660-qrd"
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 compatible = "qcom,bengal-iot"
 compatible = "qcom,bengalp-iot"
 compatible = "qcom,bengal-iot-idp"

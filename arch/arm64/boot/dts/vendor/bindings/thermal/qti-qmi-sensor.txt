@@ -57,6 +57,12 @@ Subsystem properties:
 		24. sys_therm1
 		25. sys_therm2
 		26. modem_tsens1
+<<<<<<< HEAD
+=======
+		27. BEAMER_W_THERM
+		28. BEAMER_N_THERM
+		29. BEAMER_E_THERM
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
 Example:
 

@@ -17,7 +17,11 @@ Required properties :
 			"qcom,rpmcc-apq8064", "qcom,rpmcc"
 			"qcom,rpmcc-msm8996", "qcom,rpmcc"
 			"qcom,rpmcc-bengal", "qcom,rpmcc"
+<<<<<<< HEAD
 			"qcom,rpmcc-scuba", "qcom,rpmcc"
+=======
+			"qcom,rpmcc-sdm660", "qcom,rpmcc"
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
 - #clock-cells : shall contain 1
 

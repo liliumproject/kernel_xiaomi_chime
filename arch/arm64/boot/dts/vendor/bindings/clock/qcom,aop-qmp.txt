@@ -7,6 +7,11 @@ Required properties :
 - mboxes : list of QMP mailbox phandle and channel identifier tuples.
 - mbox-names: List of identifier strings for each mailbox channel.
 		Must contain "qdss_clk".
+<<<<<<< HEAD
+=======
+- qcom,clk-stop-bimc-log: Presence indicates a BIMC logging request will
+			  be sent to AOP during kernel panic.
+>>>>>>> 9d38bc414f6e... arm64: boot: Add dts binding docs
 
 Example :
 	clock_qdss: qcom,aopclk {
