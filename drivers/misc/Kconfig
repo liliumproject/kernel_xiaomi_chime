@@ -657,7 +657,6 @@ source "drivers/misc/goodix/Kconfig"
 source "drivers/misc/focaltech/Kconfig"
 source "drivers/misc/cdfingerfp/Kconfig"
 source "drivers/misc/xiaomi_fs/Kconfig"
-source "drivers/misc/hqsysfs/Kconfig"
 endmenu
 
 config OKL4_USER_VIPC
