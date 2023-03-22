@@ -70,6 +70,7 @@ obj-$(CONFIG_OKL4_RINGBUF)	+= okl4-ringbuf.o
 obj-$(CONFIG_TEST_IRQ_REQUESTER) += irq_requester.o
 obj-$(CONFIG_DPDT_STATUS)    += dpdt.o
 obj-$(CONFIG_MI_FS)             +=xiaomi_fs/
+obj-$(CONFIG_HQ_SYSFS_SUPPORT) 	+= hqsysfs/
 
 obj-$(CONFIG_OKL4_USER_VIPC)    += okl4-vipc.o
 obj-$(CONFIG_OKL4_GUEST)        += okl4-panic.o
